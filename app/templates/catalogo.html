@@ -1,0 +1,6 @@
+<h1>Catálogo de Artefatos</h1>
+<ul>
+    {% for artefato in artefatos %}
+    <li>{{ artefato.nome }} - R${{ artefato.preco }} - Disponível: {{ artefato.disponibilidade }}</li>
+    {% endfor %}
+</ul>
